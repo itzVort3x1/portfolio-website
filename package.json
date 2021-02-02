@@ -1,0 +1,11 @@
+{
+  "name": "resume-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o static/css static/sass/main.scss -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
