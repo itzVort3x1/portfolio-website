@@ -86,3 +86,32 @@ main {
     flex-wrap: wrap;
   }
 }
+
+.info-section {
+  padding: 40px 30px;
+  display: flex;
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: infoAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+
+  &-right {
+    margin-left: 40px;
+  }
+  &-heading {
+    letter-spacing: 2px;
+  }
+  &-list{
+    margin-left: 100px;
+    margin-top: 30px;
+    list-style: none;
+
+    &-ed {
+      margin-top: 10px;
+      list-style: none;
+      margin-left: 100px;
+    }
+  }
+}

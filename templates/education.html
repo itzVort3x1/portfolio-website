@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kaustubh | about</title>
+    <title>Kaustubh | education</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="image/png" href="../static/images/logo.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +19,8 @@
             <label class="main-logo">TechSketch</label>
             <!-- <img src="../static/images/logo.png" alt="" class="logo"> -->
             <nav class="navigation">
-                <a href="{{ url_for('home')}}" class="navigation-item ">Home</a>
-                <a href="{{ url_for('about')}}" class="navigation-item navigation-item-active">About</a>
+                <a href="{{ url_for('home')}}" class="navigation-item">Home</a>
+                <a href="{{ url_for('about')}}" class="navigation-item">About</a>
                 <a href="{{ url_for('services')}}" class="navigation-item ">Services</a>
                 <a href="{{ url_for('contact')}}" class="navigation-item">Contact</a>
             </nav>
@@ -36,38 +36,38 @@
             <a href="{{ url_for('services')}}"><button class="navigation-button">Get Started</button></a>
         </header>
 
-        <section class="gallery">
-            <div class="cards-wrapper">
-                <div class="card card1">
-                    <div class="card-overlay">
-                        <h1 class="card-overlay-heading">Personal Info</h1>
-                        <a href="{{ url_for('personal_info')}}"><button class="card-overlay-btn">More Info</button></a>
-                    </div>
-                    <img src="../static/images/personalinfo.png" class="card-img">
-                </div>
-                <div class="card card2">
-                    <div class="card-overlay">
-                        <h1 class="card-overlay-heading">Education</h1>
-                        <a href="{{ url_for('education')}}"><button class="card-overlay-btn">More Info</button></a>
-                    </div>
-                    <img src="../static/images/education.png" class="card-img">
-                </div>
-                <div class="card card3">
-                    <div class="card-overlay">
-                        <h1 class="card-overlay-heading">Experience</h1>
-                        <a href="{{ url_for('experience')}}"><button class="card-overlay-btn">More Info</button></a>
-                    </div>
-                    <img src="../static/images/experience.png" class="card-img">
-                </div>
-                <div class="card card4">
-                    <div class="card-overlay">
-                        <h1 class="card-overlay-heading">Skills</h1>
-                        <a href="{{ url_for('skills')}}"><button class="card-overlay-btn">More Info</button></a>
-                    </div>
-                    <img src="../static/images/skills.png" class="card-img">
-                </div>
+        <div class="info-section">
+            <div class="info-section-left">
+                <a href="{{ url_for('about')}}" class="arrow-left"><i class="fas fa-arrow-left"></i></a>
             </div>
-        </section>
+
+            <div class="info-section-right">
+                <h2 class="info-section-heading"><i class="fas fa-graduation-cap"></i>   Education</h2>
+
+                <ul class="info-section-list-ed">
+                    <li class="info-section-list-item">
+                        <div>
+                                <h5 class="education-item">Secondary school - Jain College</h5>
+                                <p class="education-item-info"><i class="fa fa-calendar-o"></i> &nbsp;&nbsp; 2017-2019 <br />
+                                secondary school, where i took science with no intrest in computers.
+                                </p>
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="info-section-list-ed">
+                    <li class="info-section-list-item">
+                        <div>
+                                <h5 class="education-item">B.Tech - Jain University</h5>
+                                <p class="education-item-info"><i class="fa fa-calendar-o"></i> &nbsp;&nbsp; 2019-2023 <br />
+                                Currently pursuing computer science with specialization in Cloud Technology and Information Security.
+                                </p>
+                            <hr>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <footer>
             <div class="socials">
@@ -77,6 +77,7 @@
             </div>
             <span class="copyright">© Kaustubh</span>
         </footer>
+
     </div>
 </body>
 </html>

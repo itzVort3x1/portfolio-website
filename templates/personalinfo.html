@@ -3,8 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Kaustubh | personal info</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="../static/images/logo.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c68cb4b977.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 </head>
 <body>
-    <h1>Personal Info page</h1>
+    <div id="container">
+        <header>
+            <label class="main-logo">TechSketch</label>
+            <!-- <img src="../static/images/logo.png" alt="" class="logo"> -->
+            <nav class="navigation">
+                <a href="{{ url_for('home')}}" class="navigation-item ">Home</a>
+                <a href="{{ url_for('about')}}" class="navigation-item ">About</a>
+                <a href="{{ url_for('services')}}" class="navigation-item ">Services</a>
+                <a href="{{ url_for('contact')}}" class="navigation-item">Contact</a>
+            </nav>
+
+<!--            <div class="menu-button">-->
+<!--                <button>-->
+<!--                    <a href="" class="anchor-tag-mobile"><i class="fa fa-reorder"></i>-->
+<!--                    </a>-->
+<!--                </button>-->
+<!--            </div>-->
+
+
+            <a href="{{ url_for('services')}}"><button class="navigation-button">Get Started</button></a>
+        </header>
+
+        <div class="info-section">
+            <div class="info-section-left">
+                <a href="{{ url_for('about')}}" class="arrow-left"><i class="fas fa-arrow-left"></i></a>
+            </div>
+
+            <div class="info-section-right">
+                <h2 class="info-section-heading"><i class="fas fa-user"></i>   Personal info</h2>
+
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Name: Sai Kaustubh</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Date of Birth: 27 jan 2002</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Nationality: Indian</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Hobbies: Coding, Tv Shows, Music, Badmintion</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Github: itzVort3x1</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Address: Bengaluru, India</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Email: saikaustubh10@gmail.com</li>
+                </ul>
+                <ul class="info-section-list">
+                    <li class="info-section-list-item">Spoken Languages: English</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <div class="socials">
+                <a href="https://github.com/itzVort3x1" class="socials-item"><i class="fab fa-github icon-github fa-lg"></i></a>
+                <a href="https://twitter.com/saikaustubh" class="socials-item"><i class="fab fa-twitter icon-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/sai-kaustubh-3ab4491b5/" class="socials--item "><i class="fab fa-linkedin icon-github fa-lg"></i></a>
+            </div>
+            <span class="copyright">© Kaustubh</span>
+        </footer>
+
+    </div>
+
 </body>
 </html>

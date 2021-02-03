@@ -24,6 +24,17 @@ def contact():
 def personal_info():
     return render_template("personalinfo.html")
 
+@app.route('/education')
+def education():
+    return render_template("education.html")
+
+@app.route('/experience')
+def experience():
+    return render_template("experience.html")
+
+@app.route('/skills')
+def skills():
+    return render_template("skills.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

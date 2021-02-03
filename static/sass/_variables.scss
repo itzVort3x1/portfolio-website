@@ -5,6 +5,7 @@ $color-gradient1: #faa245;
 $color-gradient2: #d8328a;
 $color-gradient3: #753872;
 $color-primary: #bdbdbd;
+$color-gradient: linear-gradient(270deg, #faa245 0%, #d8328a 37.25%, #753872 100%);
 
 $font-poppins: 'Poppins', sans-serif;
 
@@ -22,7 +23,7 @@ $font-poppins: 'Poppins', sans-serif;
   border-radius: 50px;
   cursor: pointer;
   background: transparent;
-  background: linear-gradient(270deg, #faa245 0%, #d8328a 37.25%, #753872 100%);
+  background: $color-gradient;
   color: white;
 }
 
@@ -67,6 +68,20 @@ $font-poppins: 'Poppins', sans-serif;
     transform: translate(0);
   }
 }
+
+@keyframes infoAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
 
 @keyframes get-started-animation {
   0% {

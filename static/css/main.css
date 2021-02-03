@@ -26,6 +26,16 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes infoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes get-started-animation {
   0% {
     opacity: 0;
@@ -147,6 +157,28 @@ main {
     display: flex;
     flex-wrap: wrap; }
 
+.info-section {
+  padding: 40px 30px;
+  display: flex;
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: infoAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out; }
+  .info-section-right {
+    margin-left: 40px; }
+  .info-section-heading {
+    letter-spacing: 2px; }
+  .info-section-list {
+    margin-left: 100px;
+    margin-top: 30px;
+    list-style: none; }
+    .info-section-list-ed {
+      margin-top: 10px;
+      list-style: none;
+      margin-left: 100px; }
+
 .card {
   position: relative;
   margin: auto 0;
@@ -204,6 +236,52 @@ main {
   margin: auto auto;
   justify-content: center;
   animation: header-main-animation 0.5s ease-out; }
+
+.arrow-left {
+  text-decoration: none; }
+
+.fa-arrow-left {
+  font-size: 20px;
+  color: linear-gradient(270deg, #faa245 0%, #d8328a 37.25%, #753872 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #d8328a;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.fa-user {
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.fa-graduation-cap {
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.fa-briefcase {
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.fa-star {
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+hr {
+  width: 70px;
+  background-color: #d8328a;
+  margin-bottom: 5px; }
+
+.education-item {
+  text-transform: uppercase;
+  font-size: 20px; }
 
 .navigation-button {
   border: none;
