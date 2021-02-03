@@ -1,0 +1,79 @@
+#container {
+  max-width: 1300px;
+  padding: 30px;
+  margin: 0 auto;
+  max-height: none;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.main-logo {
+  font-size: 28px;
+  line-height: 36px;
+  font-style: normal;
+  font-family: $font-poppins;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: label-logo-animation;
+  animation-duration: 2s;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  flex-grow: 1;
+  margin-left: 40px;
+
+  &-item {
+    text-decoration: none;
+    color: $color-primary;
+    margin-left: 24px;
+
+    &-active{
+      color: #333;
+    }
+  }
+  &-item:first-child {
+    margin-left: 0px;
+  }
+}
+
+main {
+  display: flex;
+}
+
+.main {
+  &-content {
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &-headline {
+    font-size: 52px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    text-align: center;
+    animation: headline-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  &-description {
+    color: #828282;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    animation: description-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+}

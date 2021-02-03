@@ -1,0 +1,41 @@
+footer {
+  display: flex;
+  color: $color-primary;
+  margin: auto auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials {
+  margin-right: 40px;
+  text-align: center;
+  justify-content: center;
+
+  &-item{
+    margin-right: 12px;
+  }
+  &-item:last-child{
+    margin-right: 0px;
+  }
+}
+
+.icon-github {
+  color: $color-primary;
+  size: 40px;
+  transition: color .7s;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+span {
+  text-align: center;
+}
+
+.copyright {
+  font-size: 17px;
+  text-align: center;
+  justify-content: center;
+}

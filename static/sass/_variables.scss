@@ -1,0 +1,96 @@
+$color-black: #000;
+$color-white: #fff;
+$color-background: #eaeaea;
+$color-gradient1: #faa245;
+$color-gradient2: #d8328a;
+$color-gradient3: #753872;
+$color-primary: #bdbdbd;
+
+$font-poppins: 'Poppins', sans-serif;
+
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin navbuttons {
+  border: none;
+  font-family: $font-poppins;
+  letter-spacing: 1px;
+  padding: 10px 36px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: transparent;
+  background: linear-gradient(270deg, #faa245 0%, #d8328a 37.25%, #753872 100%);
+  color: white;
+}
+
+
+@keyframes headline-animation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+
+@keyframes description-animation {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    80% {
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+@keyframes label-logo-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(10);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes get-started-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(10);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  background-color: $color-background;
+  font-family: $font-poppins;
+  margin: 0;
+  padding: 0;
+
+  color: #333;
+}

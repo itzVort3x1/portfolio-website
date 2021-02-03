@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kaustubh</title>
+    <title>Kaustubh | services</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="image/png" href="../static/images/logo.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,15 +14,14 @@
     <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 </head>
 <body>
-
     <div id="container">
         <header>
             <label class="main-logo">TechSketch</label>
             <!-- <img src="../static/images/logo.png" alt="" class="logo"> -->
             <nav class="navigation">
-                <a href="{{ url_for('home')}}" class="navigation-item navigation-item-active">Home</a>
+                <a href="{{ url_for('home')}}" class="navigation-item">Home</a>
                 <a href="{{ url_for('about')}}" class="navigation-item">About</a>
-                <a href="{{ url_for('services')}}" class="navigation-item ">Services</a>
+                <a href="{{ url_for('services')}}" class="navigation-item navigation-item-active">Services</a>
                 <a href="{{ url_for('contact')}}" class="navigation-item">Contact</a>
             </nav>
 
@@ -36,31 +35,6 @@
 
             <a href="{{ url_for('services')}}"><button class="navigation-button">Get Started</button></a>
         </header>
-
-        <main>
-            <div class="main-content">
-                <h1 class="main-headline">Colaborate <br />  Like Never Before</h1>
-                <p class="main-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quasi nemo magnam ab laudantium,
-                    assumenda nihil vel dolor.
-                </p>
-
-                <!-- <div class="main--img">
-                    <img src="../static/images/data-x1.png" alt="">
-                </div> -->
-                <a href="{{ url_for('about')}}" style="text-decoration: none;"><button class="navigation-button know-more-button">Know More <i class="fas fa-arrow-right"></i></button></a>
-            </div>
-        </main>
-        <footer>
-            <div class="socials">
-                <a href="https://github.com/itzVort3x1" class="socials-item"><i class="fab fa-github icon-github fa-lg"></i></a>
-                <a href="https://twitter.com/saikaustubh" class="socials-item"><i class="fab fa-twitter icon-github fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/sai-kaustubh-3ab4491b5/" class="socials--item "><i class="fab fa-linkedin icon-github fa-lg"></i></a>
-            </div>
-            <span class="copyright">© Kaustubh</span>
-        </footer>
     </div>
 </body>
 </html>
-
-
