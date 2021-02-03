@@ -79,6 +79,47 @@ $font-poppins: 'Poppins', sans-serif;
   }
 }
 
+@keyframes header-main-animation {
+  0% {
+    font-size: 0px;
+  }
+  10% {
+    font-size: 5px;
+  }
+  20% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 15px;
+  }
+  40% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 25px;
+  }
+  60% {
+    font-size: 30px;
+  }
+  70% {
+    font-size: 35px;
+  }
+  80% {
+    font-size: 40px;
+  }
+  90% {
+    font-size: 45px;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+
+%fullspace {
+  width: 550px;
+  height: 250px;
+}
+
 
 * {
   box-sizing: border-box;

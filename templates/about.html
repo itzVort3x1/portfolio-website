@@ -35,6 +35,49 @@
 
             <a href="{{ url_for('services')}}"><button class="navigation-button">Get Started</button></a>
         </header>
+
+        <section class="gallery">
+            <div class="cards-wrapper">
+                <div class="card card1">
+                    <div class="card-overlay">
+                        <h1 class="card-overlay-heading">Personal Info</h1>
+                        <a href="{{ url_for('personal_info')}}"><button class="card-overlay-btn">More Info</button></a>
+                    </div>
+                    <img src="../static/images/personalinfo.png" class="card-img">
+                </div>
+                <div class="card card2">
+                    <div class="card-overlay">
+                        <h1 class="card-overlay-heading">Education</h1>
+                        <button class="card-overlay-btn">More Info</button>
+                    </div>
+                    <img src="../static/images/education.png" class="card-img">
+                </div>
+                <div class="card card3">
+                    <div class="card-overlay">
+                        <h1 class="card-overlay-heading">Experience</h1>
+                        <button class="card-overlay-btn">More Info</button>
+                    </div>
+                    <img src="../static/images/experience.png" class="card-img">
+                </div>
+                <div class="card card4">
+                    <div class="card-overlay">
+                        <h1 class="card-overlay-heading">Skills</h1>
+                        <button class="card-overlay-btn">More Info</button>
+                    </div>
+                    <img src="../static/images/skills.png" class="card-img">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="socials">
+                <a href="https://github.com/itzVort3x1" class="socials-item"><i class="fab fa-github icon-github fa-lg"></i></a>
+                <a href="https://twitter.com/saikaustubh" class="socials-item"><i class="fab fa-twitter icon-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/sai-kaustubh-3ab4491b5/" class="socials--item "><i class="fab fa-linkedin icon-github fa-lg"></i></a>
+            </div>
+            <span class="copyright">© Kaustubh</span>
+        </footer>
+
     </div>
 </body>
 </html>

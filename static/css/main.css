@@ -34,6 +34,34 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes header-main-animation {
+  0% {
+    font-size: 0px; }
+  10% {
+    font-size: 5px; }
+  20% {
+    font-size: 10px; }
+  30% {
+    font-size: 15px; }
+  40% {
+    font-size: 20px; }
+  50% {
+    font-size: 25px; }
+  60% {
+    font-size: 30px; }
+  70% {
+    font-size: 35px; }
+  80% {
+    font-size: 40px; }
+  90% {
+    font-size: 45px; }
+  100% {
+    font-size: 50px; } }
+
+.card, .card-overlay, .card-img {
+  width: 550px;
+  height: 250px; }
+
 * {
   box-sizing: border-box;
   font: inherit;
@@ -112,6 +140,70 @@ main {
   animation: description-animation;
   animation-duration: 2s;
   animation-timing-function: ease-out; }
+
+.gallery {
+  margin-top: 30px; }
+  .gallery .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+
+.card {
+  position: relative;
+  margin: auto 0;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  overflow: hidden;
+  border-radius: 20px; }
+  .card:hover .card-overlay {
+    left: 0; }
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: -110%;
+    background: linear-gradient(270deg, rgba(250, 162, 69, 0.6) 0%, rgba(216, 50, 138, 0.6) 37.25%, rgba(117, 56, 114, 0.6) 100%);
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: left .7s; }
+    .card-overlay-heading {
+      font-family: "Poppins", sans-serif;
+      font-size: 50px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: Capitalize; }
+    .card-overlay-btn {
+      width: 150px;
+      height: 40px;
+      color: white;
+      background: linear-gradient(270deg, rgba(250, 162, 69, 0.8) 0%, rgba(216, 50, 138, 0.8) 37.25%, rgba(117, 56, 114, 0.8) 100%);
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 30px;
+      border: 1px solid #d8328a;
+      outline: none;
+      cursor: pointer; }
+  .card-img {
+    object-fit: cover;
+    opacity: .5; }
+
+.heading-main {
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto auto;
+  justify-content: center;
+  animation: header-main-animation 0.5s ease-out; }
 
 .navigation-button {
   border: none;
