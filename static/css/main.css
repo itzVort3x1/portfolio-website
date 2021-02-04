@@ -179,6 +179,41 @@ main {
       list-style: none;
       margin-left: 100px; }
 
+.languages {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex; }
+  .languages-list {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex; }
+    .languages-list-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 50px; }
+
+.tools {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  display: flex; }
+  .tools-list {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex; }
+    .tools-list-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 50px; }
+
 .card {
   position: relative;
   margin: auto 0;
@@ -283,6 +318,29 @@ hr {
 .education-item {
   text-transform: uppercase;
   font-size: 20px; }
+
+.languages-list-item {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .languages-list-item-img {
+    margin-bottom: 9px;
+    height: 64px;
+    width: 64px; }
+  .languages-list-item-text {
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.tools-list-item {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .tools-list-item-img {
+    margin-bottom: 9px;
+    height: 64px;
+    width: 64px; }
+  .tools-list-item-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; }
 
 .navigation-button {
   border: none;
