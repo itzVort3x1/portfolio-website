@@ -47,26 +47,46 @@
 @keyframes header-main-animation {
   0% {
     font-size: 0px; }
-  10% {
+  5% {
     font-size: 5px; }
-  20% {
+  10% {
     font-size: 10px; }
-  30% {
+  15% {
     font-size: 15px; }
-  40% {
+  20% {
     font-size: 20px; }
-  50% {
+  25% {
     font-size: 25px; }
-  60% {
+  30% {
     font-size: 30px; }
-  70% {
+  35% {
     font-size: 35px; }
-  80% {
+  40% {
     font-size: 40px; }
-  90% {
+  45% {
     font-size: 45px; }
+  50% {
+    font-size: 50px; }
+  55% {
+    font-size: 55px; }
+  60% {
+    font-size: 60px; }
+  65% {
+    font-size: 65px; }
+  70% {
+    font-size: 70px; }
+  75% {
+    font-size: 75px; }
+  80% {
+    font-size: 80px; }
+  85% {
+    font-size: 85px; }
+  90% {
+    font-size: 90px; }
+  95% {
+    font-size: 95px; }
   100% {
-    font-size: 50px; } }
+    font-size: 100px; } }
 
 .card, .card-overlay, .card-img {
   width: 550px;
@@ -214,6 +234,182 @@ main {
       align-items: center;
       margin-right: 50px; }
 
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin-top: 20px; }
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 70%; }
+
+.section-container {
+  position: relative;
+  min-width: 1000px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000; }
+
+.contactInfo {
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background: linear-gradient(270deg, #faa245 0%, #d8328a 37.25%, #753872 100%);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); }
+  .contactInfo-h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500; }
+
+.info {
+  position: relative;
+  margin: 20px 0; }
+
+.info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start; }
+
+.info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px; }
+
+.info li span:nth-child(1) i {
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5; }
+
+.info li span:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5; }
+
+.info li:hover span:nth-child(1) i,
+.info li:hover span:nth-child(2) {
+  opacity: 1; }
+
+.sci {
+  position: relative;
+  display: flex; }
+
+.sci li {
+  list-style: none;
+  margin-right: 15px; }
+
+.sci li a {
+  text-decoration: none; }
+
+.sci li a i {
+  filter: invert(1);
+  opacity: 0.5; }
+
+.sci li:hover a i {
+  opacity: 1; }
+
+.contactForm {
+  position: absolute;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 100%;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5); }
+
+.contactForm h2 {
+  color: #d8328a;
+  font-size: 24px;
+  font-weight: 500; }
+
+.contactForm .formBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px; }
+
+.contactForm .formBox .inputBox {
+  position: relative;
+  margin: 0 0 35px 0; }
+
+.contactForm .formBox .inputBox.w50 {
+  width: 47%; }
+
+.contactForm .formBox .inputBox.w100 {
+  width: 100%; }
+
+.contactForm .formBox .inputBox input,
+.contactForm .formBox .inputBox textarea {
+  width: 100% !important;
+  padding: 5px 0;
+  resize: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none; }
+
+.contactForm .formBox .inputBox textarea {
+  min-height: 120px; }
+
+.contactForm .formBox .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  transition: 0.5s;
+  pointer-events: none; }
+
+.contactForm .formBox .inputBox input:focus ~ span,
+.contactForm .formBox .inputBox textarea:focus ~ span,
+.contactForm .formBox .inputBox input:valid ~ span,
+.contactForm .formBox .inputBox textarea:valid ~ span {
+  transform: translateY(-25px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #d8328a; }
+
+.contactForm .formBox .inputBox button {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #333;
+  margin: auto;
+  max-width: 250px;
+  padding: 10px 36px;
+  align-items: center;
+  border-radius: 50px; }
+
+.contactForm .formBox .inputBox button i {
+  background: inherit;
+  font-size: 1.2rem;
+  margin-left: 10px; }
+
 .card {
   position: relative;
   margin: auto 0;
@@ -342,6 +538,28 @@ hr {
     letter-spacing: 1px;
     text-align: center; }
 
+.footer-special {
+  margin-top: 20px; }
+
+.carousel {
+  object-fit: cover;
+  margin: auto auto; }
+
+.carousel .carousel-item {
+  height: 400px;
+  width: 800px;
+  object-fit: cover; }
+
+.carousel-item {
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+  min-width: 800px; }
+  .carousel-item-img {
+    object-fit: cover; }
+
 .navigation-button {
   border: none;
   font-family: "Poppins", sans-serif;
@@ -405,3 +623,18 @@ span {
   font-size: 17px;
   text-align: center;
   justify-content: center; }
+
+.contact-footer {
+  display: flex;
+  color: #333;
+  margin: auto auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center; }
+
+.icon-github-contact {
+  color: #828282;
+  size: 40px;
+  transition: color .7s; }
+  .icon-github-contact:hover {
+    color: #000; }

@@ -39,3 +39,22 @@ span {
   text-align: center;
   justify-content: center;
 }
+
+.contact-footer {
+  display: flex;
+  color: #333;
+  margin: auto auto;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-github-contact {
+  color: #828282;
+  size: 40px;
+  transition: color .7s;
+
+  &:hover {
+    color: #000;
+  }
+}

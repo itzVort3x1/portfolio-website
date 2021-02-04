@@ -35,6 +35,65 @@
 
             <a href="{{ url_for('services')}}"><button class="navigation-button">Get Started</button></a>
         </header>
+        <section>
+            <div class="section-container">
+                <div class="contactInfo">
+                    <div>
+                        <h2 class="contactInfo-h2">Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span>Bengaluru, India</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope"></i></span>
+                                <span>saikaustubh10@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><i class="fab fa-discord"></i></span>
+                                <span>kaustubh#1754</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="https://github.com/itzVort3x1"><i class="fab fa-github fa-2x"></i></a></li>
+                        <li><a href="https://twitter.com/saikaustubh"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/sai-kaustubh-3ab4491b5/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contactForm">
+                    <h2>Send a Message</h2>
+                    <div class="formBox">
+                        <form action="{{ url_for('contact')}}" method="post">
+                        <div class="inputBox w50">
+                            <input type="text" name="name" required>
+                            <span>Name </span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" name="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <textarea name="message" required></textarea>
+                            <span>Your Message </span>
+                        </div>
+                        <div class="inputBox w50">
+                            <button type="submit">Send Message<i class="fas fa-send"></i></button>
+                        </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="contact-footer">
+            <div class="socials">
+                <a href="https://github.com/itzVort3x1" class="socials-item"><i class="fab fa-github icon-github-contact fa-lg"></i></a>
+                <a href="https://twitter.com/saikaustubh" class="socials-item"><i class="fab fa-twitter icon-github-contact fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/sai-kaustubh-3ab4491b5/" class="socials-item "><i class="fab fa-linkedin icon-github-contact fa-lg"></i></a>
+            </div>
+            <span class="copyright">© Kaustubh</span>
+        </footer>
     </div>
 </body>
 </html>
