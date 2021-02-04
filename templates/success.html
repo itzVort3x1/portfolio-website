@@ -14,7 +14,35 @@
     <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 </head>
 <body>
-    <h1>success</h1>
-    <a href="{{url_for('home')}}"><button>Go back to home</button></a>
+    <div id="container">
+        <header>
+            <label class="main-logo">TechSketch</label>
+            <!-- <img src="../static/images/logo.png" alt="" class="logo"> -->
+            <nav class="navigation">
+                <a href="{{ url_for('home')}}" class="navigation-item">Home</a>
+                <a href="{{ url_for('about')}}" class="navigation-item">About</a>
+                <a href="{{ url_for('services')}}" class="navigation-item ">Services</a>
+                <a href="{{ url_for('contact')}}" class="navigation-item navigation-item-active">Contact</a>
+            </nav>
+
+<!--            <div class="menu-button">-->
+<!--                <button>-->
+<!--                    <a href="" class="anchor-tag-mobile"><i class="fa fa-reorder"></i>-->
+<!--                    </a>-->
+<!--                </button>-->
+<!--            </div>-->
+
+
+            <a href="{{ url_for('services')}}"><button class="navigation-button">Get Started</button></a>
+        </header>
+
+        <main>
+        <h1 class="success-heading">success</h1>
+        <a href="{{url_for('home')}}"><button class="go-back-home-heading">Go back to home</button></a>
+    </main>
+    </div>
+
+
+
 </body>
 </html>

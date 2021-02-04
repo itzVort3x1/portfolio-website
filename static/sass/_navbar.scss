@@ -9,7 +9,6 @@
   display: flex;
   margin: auto;
   padding: 10px 36px;
-  display: flex;
   cursor: pointer;
   align-items: center;
   border-radius: 50px;
@@ -23,4 +22,18 @@
     background: inherit;
     font-size: 1.2rem;
     margin-left: 8px;
+}
+
+.go-back-home-heading {
+    text-align: center;
+    display: flex;
+    padding: 10px 36px;
+    margin: auto auto;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #333;
+    background: -webkit-linear-gradient(#faa245, #d8328a, #753872);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

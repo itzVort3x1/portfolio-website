@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request
 import smtplib
 import requests
+import os
 
 app = Flask(__name__)
 
-OWN_EMAIL = "saikaustubh03@gmail.com"
-OWN_PASSWORD= "sai270102"
+
+FROM_EMAIL = os.environ['from_email']
+FROM_PASSWORD = os.environ['from_password']
+TO_EMAIL = os.environ['to_email']
 
 @app.route('/')
 def home():
@@ -27,15 +30,16 @@ def contact():
         email = data["email"]
         message = data["message"]
         send_email(name=name, email=email, message=message)
-        return render_template("success.html")
+        return render_template("home.html")
     return render_template("contact.html")
 
+
 def send_email(name, email, message):
-    email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nMessage: {message}"
+    email_message = f"Subject:Message From TechSketch\n\nName: {name}\nEmail: {email}\nMessage: {message}"
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(OWN_EMAIL, OWN_PASSWORD)
-        connection.sendmail(from_addr=OWN_EMAIL, to_addrs="saikaustubh10@gmail.com", msg=email_message)
+        connection.login(FROM_EMAIL, FROM_PASSWORD)
+        connection.sendmail(from_addr=FROM_EMAIL, to_addrs=TO_EMAIL , msg=email_message)
 
 
 @app.route('/personalinfo')
