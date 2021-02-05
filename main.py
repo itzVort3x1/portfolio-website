@@ -7,9 +7,9 @@ load_dotenv()
 app = Flask(__name__)
 
 
-FROM_EMAIL = os.getenv('from_email').encode('UTF-8')
-FROM_PASSWORD = os.getenv('from_password').encode('UTF-8')
-TO_EMAIL = os.getenv('to_email').encode('UTF-8')
+FROM_EMAIL = os.getenv('from_email')
+FROM_PASSWORD = os.getenv('from_password')
+TO_EMAIL = os.getenv('to_email')
 
 @app.route('/')
 def home():
