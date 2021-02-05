@@ -37,7 +37,7 @@ def contact():
 
 def send_email(name, email, message):
     email_message = f"Subject:Message From TechSketch\n\nName: {name}\nEmail: {email}\nMessage: {message}"
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
+    with smtplib.SMTP_SSL("smtp.gmail.com", 587) as connection:
         # connection.starttls()
         connection.login(FROM_EMAIL, FROM_PASSWORD)
         connection.sendmail(from_addr=FROM_EMAIL, to_addrs=TO_EMAIL, msg=email_message)
