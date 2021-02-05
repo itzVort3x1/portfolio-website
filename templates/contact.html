@@ -62,20 +62,32 @@
                     </ul>
                 </div>
                 <div class="contactForm">
+                    {% if msg_sent: %}
+                        <div class="alert alert-success" role="alert">
+                            Your Message has been successfully sent!
+                        </div>
+                    {% else: %}
                     <h2>Send a Message</h2>
+                    {% endif %}
                     <div class="formBox">
                         <form action="{{ url_for('contact')}}" method="post">
                         <div class="inputBox w50">
                             <input type="text" name="name" required>
-                            <span>Name </span>
+                            <span><i class="fa fa-user"></i> &nbsp; Name </span>
                         </div>
                         <div class="inputBox w50">
                             <input type="email" name="email" required>
-                            <span>Email Address</span>
+                            <span><i class="fas fa-envelope" style="background:
+                            -webkit-linear-gradient(#faa245, #d8328a, #753872);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;"></i> &nbsp; Email Address</span>
                         </div>
                         <div class="inputBox w50">
                             <textarea name="message" required></textarea>
-                            <span>Your Message </span>
+                            <span><i class="fas fa-comments " style="background:
+                            -webkit-linear-gradient(#faa245, #d8328a, #753872);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;"></i> &nbsp; Your Message </span>
                         </div>
                         <div class="inputBox w50">
                             <button type="submit">Send Message<i class="fas fa-send"></i></button>

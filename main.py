@@ -30,8 +30,8 @@ def contact():
         email = data["email"]
         message = data["message"]
         send_email(name=name, email=email, message=message)
-        return render_template("home.html")
-    return render_template("contact.html")
+        return render_template("contact.html", msg_sent=True)
+    return render_template("contact.html", msg_sent=False)
 
 
 def send_email(name, email, message):
