@@ -1,6 +1,6 @@
 # resume-webpage
 A Complete portfolio website using flask and python!
-![check the website here](https://techsketch.herokuapp.com/)
+[check the website here](https://techsketch.herokuapp.com/)
 
 ![GitHub](https://img.shields.io/github/license/itzvort3x1/portfolio-website?style=plastic) ![GitHub repo size](https://img.shields.io/github/repo-size/itzVort3x1/portfolio-website?style=plastic)  ![Lines of code](https://img.shields.io/tokei/lines/github/itzVort3x1/portfolio-website?style=plastic) ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&style=plastic&up_color=green&up_message=online&url=https%3A%2F%2Ftechsketch.herokuapp.com%2F) ![GitHub issues](https://img.shields.io/github/issues-raw/itzVort3x1/portfolio-website?style=plastic) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/itzVort3x1/portfolio-website?style=plastic) ![GitHub forks](https://img.shields.io/github/forks/itzVort3x1/portfolio-website?style=social)
 
