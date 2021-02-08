@@ -19,7 +19,6 @@ Currently hosted on Heroku.
 You're free to use this for your own personal portfolio; but please do write to me telling me you have!
  
  - change the static content wherever it is to suit your work.
- - **NOTE**: Hard-refresh your browser (ctrl-shift-r) when you update the js files #19
  - change all the `html` content and use your own!   
  - send me an email at saikaustubh10@gmail.com I'd really love to see it being used!
  
