@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
-import smtplib, ssl
+import smtplib
 import os
 load_dotenv()
 
@@ -37,7 +37,6 @@ def contact():
 
 def send_email(name, email, message):
     email_message = f"Subject:Message From TechSketch\n\nName: {name}\nEmail: {email}\nMessage: {message}"
-    context = ssl.create_default_context()
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
         connection.login(FROM_EMAIL, FROM_PASSWORD)
         connection.sendmail(from_addr=FROM_EMAIL, to_addrs=TO_EMAIL, msg=email_message)
