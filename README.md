@@ -1,11 +1,4 @@
 # resume-webpage
-<<<<<<< HEAD
-A Complete functioning portfolio website using flask and python!
-
-
-
-
-=======
 A Complete portfolio website using flask and python!
 [check the website here](https://techsketch.herokuapp.com/)
 
@@ -30,4 +23,3 @@ You're free to use this for your own personal portfolio; but please do write to 
  - send me an email at saikaustubh10@gmail.com I'd really love to see it being used!
  
  ## Thank You!
->>>>>>> 6282711f6c8febfe784a062ae1709e79969fe228
